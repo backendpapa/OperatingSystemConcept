@@ -68,10 +68,19 @@ EXIT
 4. Performs state restore
 5. executes a ```return_from_interrupt``` instruction to return control to CPU to continue its prior execution before the interrupt.
 
+EXIT
+
+#### System Interrupt Flow
+- D.C ```raises``` an interrupt and assert a signal on the IRL
+- CPU ```catches``` the signal and ```dispatches``` the Interupt number to the ISR
+- ISR ```clears``` the interrupt.
+
+EXIT
+
 
 
 ## Not Well Understood Concepts
-1. The CPU and the device controllers can execute in parallel, competing for memory cycles. To ensure orderly access to the shared memory, a memory controller synchronizes access to the memory.[here](#device-controllers)
+1. The CPU and the device controllers can execute in parallel, competing for memory cycles. To ensure orderly access to the shared memory, a memory controller synchronizes access to the memory.
 
 
 
