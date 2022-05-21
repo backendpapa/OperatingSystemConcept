@@ -27,7 +27,7 @@ My goals behind learning operating systems is to be able to:
 
 ## Topics
 A. **Overview**
-- [ ] Introduction
+- [ ] [Introduction](Introduction)
 - [ ] Operating System Structure
 
 B. **Process Management**
