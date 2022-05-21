@@ -33,6 +33,8 @@
 4. Informs the D.D of completed execution
 5. D.D transfers control back to the system.
 
+EXIT
+
 **Question**
 
 How does a D.C inform the D.D thats its done executing?
@@ -40,8 +42,36 @@ How does a D.C inform the D.D thats its done executing?
 ANS: *Interupt*
 
 
+- Hardware trigger interrupts by sending signals to the CPU via system bus.
+
+#### CPU Interrupt Response Flow
+1. When CPU is interrupted
+2. Stop current executions and transfer control or execution to the interrupt address which contains the ISR( Interrupt Service Routine). ISR determines how to handle the interrupt.
+3. Once ISR completes execution, control is handed back and CPU resumes interrupted execution
+
+EXIT
+
+- Table of pointers hold the addresses of the ISR of various devices
+- The interrupt must save the state of the interrupted service so it can restore after completed execution.
+
+#### Interrupt Implementation
+1. D.C hits a IRL (Interrupt Request Line)
+2. CPU detects this signal and read the interrupt number from the signal
+3. CPU uses this interrupt number to index the arrays in the Interrupt Vector and jump to the signalling ISR.
+
+EXIT
+
+#### Roles of Interrupt Service Routine
+1. Saves interrupted state
+2. Checks possible cause of interrupt
+3. Performs executions
+4. Performs state restore
+5. executes a ```return_from_interrupt``` instruction to return control to CPU to continue its prior execution before the interrupt.
+
 
 
 ## Not Well Understood Concepts
 1. The CPU and the device controllers can execute in parallel, competing for memory cycles. To ensure orderly access to the shared memory, a memory controller synchronizes access to the memory.
+
+
 
