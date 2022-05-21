@@ -77,6 +77,10 @@ EXIT
 
 EXIT
 
+- CPU have two IRL :
+  1. Unmaskable IRL: Cannot be controlled by the CPU, examples such as system failure. (VECTOR 0-31)
+  2. Maskable IRL: Can be turned off by the CPU expecially when the CPU is working on a critical execution that must not be interrupted, this is the IRL D.C uses. (VECTOR 32-255) 
+
 
 
 ## Not Well Understood Concepts
