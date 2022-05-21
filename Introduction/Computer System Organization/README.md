@@ -71,7 +71,7 @@ EXIT
 
 
 ## Not Well Understood Concepts
-1. The CPU and the device controllers can execute in parallel, competing for memory cycles. To ensure orderly access to the shared memory, a memory controller synchronizes access to the memory.
+1. The CPU and the device controllers can execute in parallel, competing for memory cycles. To ensure orderly access to the shared memory, a memory controller synchronizes access to the memory.[here](#device-controllers)
 
 
 
