@@ -2,8 +2,8 @@
 
 ## Topics
 
-- [ ] What Operating System Do 
-- [ ] [Computer-System Organization](Computer%20System%20Organization)
+- [x] What Operating System Do 
+- [x] [Computer-System Organization](Computer%20System%20Organization)
 - [ ] Computer-System Architecture
 - [ ] Operating System Operation
 - [ ] Resource Management
