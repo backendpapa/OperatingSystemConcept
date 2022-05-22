@@ -82,6 +82,47 @@ EXIT
   2. Maskable IRL: Can be turned off by the CPU expecially when the CPU is working on a critical execution that must not be interrupted, this is the IRL D.C uses. (VECTOR 32-255) 
 
 
+### Storage structure
+- CPU loads instruction from memory(RAM), a semiconductor.
+- RAM cant be used to store boot program because it is volatile.
+- A memory is an array of bytes(4 bits)
+- Each byte has its own memory address
+- CPU ```load``` a byte from the memory or ```store``` a data into the meomry from the register
+
+#### Differences between Main Memory and Secondary Memory
+
+<table>
+<tr>
+<td></td>
+<td>Main Memory</td>
+<td>Secondary Memory</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Volatile</td>
+<td>Non volative</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Expensive</td>
+<td>Cheap</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Smaller size</td>
+<td>Larger size</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Faster</td>
+<td>Slower</td>
+</tr>
+</table>
+NB: There are two types of storage
+
+1. Mechanical storage(such as HDD)
+2. Electrical storage(such as SSD)
 
 ## Not Well Understood Concepts
 1. The CPU and the device controllers can execute in parallel, competing for memory cycles. To ensure orderly access to the shared memory, a memory controller synchronizes access to the memory.
