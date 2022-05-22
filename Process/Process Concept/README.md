@@ -46,3 +46,11 @@ int main(int argc, char * argv[]){
 
 ## Process State
 
+A process have a state that defines its current activity. They are:
+
+1. New - when a process is being created
+2. Ready - Its waiting to be assigned a processor
+3. Running - Process's instructions are being executed
+4. Waiting - Process is waiting for an event to occur such as I/O before continuing execution
+5. Terminated - Process have finished execution.
+
